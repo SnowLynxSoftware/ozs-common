@@ -1,0 +1,9 @@
+.idea
+node_modules
+.github
+__tests__
+src
+.gitignore
+.npmignore
+jest.config.ts
+tsconfig.json

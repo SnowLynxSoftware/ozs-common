@@ -1,0 +1,15 @@
+name: Run Tests On PR
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  RunTests:
+    name: Run Tests On Ubuntu
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - run: npm i && npm run test
