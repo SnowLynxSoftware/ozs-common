@@ -8,7 +8,6 @@ export class UserDTO extends BaseDTO {
   banDate: Date;
   banReason: string;
   isBanned: boolean;
-  allowCommunityNewsletter: boolean;
 
   constructor(data?: any) {
     super(data);
@@ -19,6 +18,5 @@ export class UserDTO extends BaseDTO {
     this.banDate = data?.banDate;
     this.banReason = data?.banReason;
     this.isBanned = data?.isBanned;
-    this.allowCommunityNewsletter = data?.allowCommunityNewsletter;
   }
 }

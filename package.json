@@ -1,6 +1,6 @@
 {
   "name": "@snowlynxsoftware/ozs-common",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Common models, DTOs, interfaces, enums, and other utility functions that we can reuse across all services.",
   "main": "dist/index.js",
   "scripts": {

@@ -9,5 +9,4 @@ export interface IUser extends IBaseEntity {
   banDate: Date;
   banReason: string;
   isBanned: boolean;
-  allowCommunityNewsletter: boolean;
 }
