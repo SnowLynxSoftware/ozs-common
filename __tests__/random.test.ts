@@ -9,8 +9,6 @@ describe("Random Functionality", () => {
     const size = 16;
     const token1 = RandomUtil.generateRandomString(size);
     const token2 = RandomUtil.generateRandomString(size);
-    console.log(token1);
-    console.log(token2);
     expect(token1).not.toBe(token2);
   });
   test("too short of a string size should throw an error", () => {
@@ -25,5 +23,11 @@ describe("Random Functionality", () => {
     const size = 12;
     const token = RandomUtil.generateRandomString(size);
     expect(token).toHaveLength(size);
+  });
+  test("should be able to generate random UrlSafe tokens", () => {
+    const size = 16;
+    const token1 = RandomUtil.generateRandomString(size, true);
+    const token2 = RandomUtil.generateRandomString(size, true);
+    expect(token1).not.toBe(token2);
   });
 });
