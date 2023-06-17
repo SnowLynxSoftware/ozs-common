@@ -1,4 +1,4 @@
-import { UserDTO, UserLoginDTO, UserRegisterDTO } from "../src";
+import { SettingsDTO, UserDTO, UserLoginDTO, UserRegisterDTO } from "../src";
 
 describe("DTOs Functionality", () => {
   test("should be able to create new user DTOs", () => {
@@ -42,5 +42,23 @@ describe("DTOs Functionality", () => {
     expect(userRegisterDTO.email).toBe(registerDTOParams.email);
     expect(userRegisterDTO.password).toBe(registerDTOParams.password);
     expect(userRegisterDTO.displayName).toBe(registerDTOParams.displayName);
+  });
+
+  test("should be able to create settings DTOs", () => {
+    const github = "https://www.github.com/SnowLynxSoftware";
+
+    const settingsData = {
+      allowCommunityNewsletter: true,
+      maintenanceModeEnabled: false,
+      allowUserRegistration: true,
+      emailsEnabled: true,
+      socialMediaLinks: JSON.stringify({
+        github,
+      }),
+    };
+    const settingsDTO = new SettingsDTO(settingsData);
+    expect(settingsDTO).not.toBeNull();
+    expect(settingsDTO.emailsEnabled).toBeTruthy();
+    expect(settingsDTO.socialMediaLinksData.github).toBe(github);
   });
 });
