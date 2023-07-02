@@ -2,3 +2,8 @@ export * from "./base-entity.interface";
 export * from "./role.interface";
 export * from "./settings.interface";
 export * from "./user.interface";
+export * from "./zoo.interface";
+export * from "./animal.interface";
+export * from "./animal-category-type.interface";
+export * from "./animal-region.interface";
+export * from "./animal-conservation-status.interface";
