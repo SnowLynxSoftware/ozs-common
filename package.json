@@ -1,6 +1,6 @@
 {
   "name": "@snowlynxsoftware/ozs-common",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Common models, DTOs, interfaces, enums, and other utility functions that we can reuse across all services.",
   "main": "dist/index.js",
   "scripts": {
@@ -12,11 +12,11 @@
     "registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
-    "@types/jest": "29.5.1",
+    "@types/jest": "29.5.2",
     "jest": "29.5.0",
     "prettier": "2.8.8",
-    "ts-jest": "29.1.0",
+    "ts-jest": "29.1.1",
     "ts-node": "10.9.1",
-    "typescript": "5.0.4"
+    "typescript": "5.1.6"
   }
 }

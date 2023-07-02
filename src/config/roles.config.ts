@@ -27,6 +27,9 @@ export class RolesConfig {
         Privileges.CAN_BAN_USERS,
         Privileges.CAN_UNBAN_USERS,
         Privileges.CAN_EDIT_OTHER_USER_INFO,
+        Privileges.CAN_GET_ALL_USERS_FROM_ADMIN_VIEW,
+        Privileges.CAN_EDIT_ANIMAL_METADATA,
+        Privileges.CAN_OVERRIDE_MAINTENANCE_MODE,
       ],
     };
 

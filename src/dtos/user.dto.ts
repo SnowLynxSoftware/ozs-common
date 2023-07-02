@@ -1,4 +1,5 @@
 import { BaseDTO } from "./base.dto";
+import { IRole } from "../interfaces";
 
 export class UserDTO extends BaseDTO {
   email: string;
@@ -8,6 +9,7 @@ export class UserDTO extends BaseDTO {
   banDate: Date;
   banReason: string;
   isBanned: boolean;
+  role: IRole;
 
   constructor(data?: any) {
     super(data);
@@ -18,5 +20,6 @@ export class UserDTO extends BaseDTO {
     this.banDate = data?.banDate;
     this.banReason = data?.banReason;
     this.isBanned = data?.isBanned;
+    this.role = data ? JSON.parse(data?.roleData) : null;
   }
 }
