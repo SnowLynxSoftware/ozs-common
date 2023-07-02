@@ -20,6 +20,6 @@ export class UserDTO extends BaseDTO {
     this.banDate = data?.banDate;
     this.banReason = data?.banReason;
     this.isBanned = data?.isBanned;
-    this.role = data ? JSON.parse(data?.roleData) : null;
+    this.role = data && data?.roleData ? JSON.parse(data?.roleData) : null;
   }
 }

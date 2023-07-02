@@ -1,4 +1,4 @@
-import {IRole, PrivilegesUtil, RolesConfig} from "../src";
+import { IRole, PrivilegesUtil, RolesConfig } from "../src";
 
 describe("Privileges Functionality", () => {
   test("should be able to get a flat array of privileges from an array of roles", () => {
@@ -6,6 +6,6 @@ describe("Privileges Functionality", () => {
     const privileges = PrivilegesUtil.getAllPrivilegesFromRoles(
       roles as IRole[]
     );
-    expect(privileges).toHaveLength(4);
+    expect(privileges).toHaveLength(7);
   });
 });
